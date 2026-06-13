@@ -94,14 +94,34 @@ body{
 
 /* Header Section For Landing Page */
 .site-header{
+    background-color: var(--color-surface);  
+    position: sticky;
+    z-index: 100;
+}
+
+.header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    background-color: var(--color-surface);
     padding: 30px 32px;
 }
 
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.head-text{
+    display: flex;
+    gap: 10px;
+}
+.shield-icon{
+    background-color: var(--color-primary);
+    width: 40px;
+    height: 30px;
+    border-radius: var(--radius-sm);
+}
 .head-text h1{
     font-size: var(--text-lg);
     font-family: var(--font-heading);
@@ -119,10 +139,17 @@ a{
     color: inherit;
     text-decoration: none;
 }
+
+nav ul a{
+    padding: 10px;
+}
 nav ul a:hover{
     color: rgba(0, 0, 0, 0.685);
 }
 
 .ananymous a{
-    padding: 10px 30px;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: var(--radius-md);
 }
