@@ -21,7 +21,16 @@ print(client.list_database_names())
 def create_token():
     if request.method == "POST":
         token = secrets.token_urlsafe(10) # a 10 character string for  our token usable by the user anytime at login
-        anonymoustokens.insert_one({"token": token})
+        anonymoustokens.insert_one({
+            "token": token,
+            "current_name": generate_anon_name,
+            "name_history": [],
+            "flag_count": 0,
+            "is_banned": False,
+            "created_at": datetime.utcnow(),
+            "last_seen": datetime.utcnow
+        })
+        
         return jsonify({"token": token}), 201
     return jsonify({"message": "Send a POST request to create a token."}), 200
 
