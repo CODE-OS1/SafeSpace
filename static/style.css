@@ -1,0 +1,128 @@
+/* Preset Variables*/
+
+:root {
+
+  /* Brand Colors */
+  --color-primary: #2F5D9F;
+  --color-secondary: #5CA8A8;
+  --color-accent: #F3B562;
+
+  /* Status Colors */
+  --color-success: #4CAF50;
+  --color-watch: #FFB74D;
+  --color-urgent: #E57373;
+
+  /* Backgrounds */
+  --color-background: #F7F9FC;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F1F5F9;
+
+  /* Text */
+  --color-text-primary: #1F2937;
+  --color-text-secondary: #6B7280;
+  --color-text-muted: #9CA3AF;
+
+  /* Borders */
+  --color-border: #E5E7EB;
+  --color-border-focus: #2F5D9F;
+
+  /* Navigation */
+  --color-nav-active: #2F5D9F;
+  --color-nav-inactive: #94A3B8;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
+
+  /* Typography */
+  --font-primary: 'Inter', sans-serif;
+  --font-heading: 'Inter', sans-serif;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 2rem;       /* 32px */
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Spacing */
+  --space-xs: 0.25rem;    /* 4px */
+  --space-sm: 0.5rem;     /* 8px */
+  --space-md: 1rem;       /* 16px */
+  --space-lg: 1.5rem;     /* 24px */
+  --space-xl: 2rem;       /* 32px */
+  --space-2xl: 3rem;      /* 48px */
+
+  /* Layout */
+  --container-width: 1200px;
+  --mobile-width: 480px;
+
+  /* Animation */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-background);
+    line-height: 1.7;
+    font-size: var(--text-sm);
+    font-family: var(--font-primary);
+    color: var(--color-text-primary);
+}
+
+/* Header Section For Landing Page */
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--color-surface);
+    padding: 30px 32px;
+}
+
+.head-text h1{
+    font-size: var(--text-lg);
+    font-family: var(--font-heading);
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+nav ul a:hover{
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.ananymous a{
+    padding: 10px 30px;
+}
