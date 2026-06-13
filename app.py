@@ -16,11 +16,7 @@ print(client.list_database_names())
 @app.route("/api/auth/register", methods=["GET", "POST"])
 def create_token():
     if request.method == "POST":
-<<<<<<< HEAD
         token = secrets.token_urlsafe(10) # a 10 character string for  our token
-=======
-        token = secrets.token_urlsafe(32)
->>>>>>> 01c0dc4be1919a6403295d56dfe07d4443e43a46
         anonymoustokens.insert_one({"token": token})
         return jsonify({"token": token}), 201
     return jsonify({"message": "Send a POST request to create a token."}), 200
