@@ -1,15 +1,17 @@
 from flask import Flask
 import pymongo
 import os
+from dotenv import load_dotenv
+
+load_dotenv() # loading environment variables
 
 
 app = Flask(__name__)
 
-mongodb_uri = "mongodb+srv://sspaceug:E07qMAC82dWok9Dv@cluster0.rcvvqsb.mongodb.net/?appName=Cluster0"
-client = pymongo.MongoClient(mongodb_uri) # creating a client using Mongoclient
+client = pymongo.MongoClient(os.getenv("MONGODB_URI")) 
 database = client.anonymoustokens 
 anonymoustokens = database.anonymoustokens
-print(client.list_database_names()) # test for database connection
+print(client.list_database_names()) 
 
 
 
