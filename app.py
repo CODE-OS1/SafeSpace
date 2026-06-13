@@ -25,6 +25,14 @@ def create_token():
         return jsonify({"token": token}), 201
     return jsonify({"message": "Send a POST request to create a token."}), 200
 
+# funtion that generates an anonymous name for the user
+def generate_anon_name ():
+    adjectives = ["Kronkron", "Tumi", "Fitaa", "D)fo", "Adamfo", "Boafo", "Obiremp)n", "Ahoto"]
+    nouns  = ["Okra", "Nk)sua", "Osrane", "Owia","Esono", ")soro", "Epo", "Patuo"]
+    import random
+    return f"Anon-{random.choice(adjectives)}{random.choce(nouns)}"
+
+
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(debug = True, host = "0.0.0.0", port = port)
