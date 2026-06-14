@@ -180,3 +180,15 @@ nav ul a:hover{
 }
 
 /* Text that came after Below header and introduced UG  */
+.counsel{
+    margin-top: 40px;
+    background-color: #5c99a81c;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: var(--radius-lg);
+    color: var(--color-primary);
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+/* SafeSpace Headings and designs  */
