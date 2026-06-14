@@ -97,6 +97,7 @@ body{
     background-color: var(--color-surface);  
     position: sticky;
     z-index: 100;
+    top: 0;
 }
 
 .header-container{
@@ -280,4 +281,27 @@ nav ul a:hover{
     object-fit: cover;
     position: relative;
     z-index: 1;
+}
+
+/* Text Below Hero Section */
+.below-hero{
+    margin-top: 150px;
+}
+
+.below-hero-head h2{
+    font-size: var(--text-3xl);
+    text-align: center;
+    color: var(--color-text-primary);
+    font-family: var(--font-heading);
+    margin-bottom: 30px;
+}
+
+.below-hero-head p{
+    color: #6B7280;
+    font-size: var(--text-lg);
+    text-align: center;
+    font-family: var(--font-heading);
+    margin-bottom: 50px;
+    max-width: 650px;
+    margin: 0 auto;
 }
