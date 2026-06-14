@@ -44,7 +44,7 @@
 
   /* Typography */
   --font-primary: 'Inter', sans-serif;
-  --font-heading: 'Inter', sans-serif;
+  --font-heading: 'Manrope', sans-serif;
 
   /* Font Sizes */
   --text-xs: 0.75rem;     /* 12px */
@@ -177,6 +177,7 @@ nav ul a:hover{
     padding: 10px 20px;
     background-color: var(--color-accent);
     border-radius: var(--radius-md);
+    font-weight: 600;
 }
 
 /* Text that came after Below header and introduced UG  */
@@ -191,4 +192,41 @@ nav ul a:hover{
     font-weight: 500;
 }
 
-/* SafeSpace Headings and designs  */
+/* Hero Section Designs */
+.hero{
+    margin-top: 30px;
+}
+.hero-text h2{
+    font-size: 2.5rem;
+    color: var(--color-text-primary);
+}
+
+.hero-text h3{
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    font-weight: 450;
+    margin: 10px 0px;
+}
+
+.hero-text p{
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.buttons{
+    margin: 50px 0;
+}
+
+.btn {
+    padding: 20px 50px;
+    border-radius: var(--radius-lg);
+    font-size: var(--text-base);
+    font-weight: var(--weight-bold);
+    color: var(--color-surface);
+    font-family: var(--font-heading);
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+}
