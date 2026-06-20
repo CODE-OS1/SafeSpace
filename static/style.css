@@ -306,3 +306,85 @@ nav ul a:hover{
     margin: 0 auto;
 }
 
+/* Cards Below Hero*/
+.card-container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+.card{
+    background: var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: 28px 26px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    min-height: 350px;
+}
+
+.card > div:first-child{
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.card-container .card:nth-child(1) > div:first-child{
+    background: rgba(47,93,159,0.08);
+    color: var(--color-primary);
+}
+.card-container .card:nth-child(2) > div:first-child{
+    background: rgba(92,168,168,0.08);
+    color: var(--color-secondary);
+}
+.card-container .card:nth-child(3) > div:first-child{
+    background: rgba(243,181,98,0.08);
+    color: var(--color-accent);
+}
+
+.card h3{
+    font-size: 1.25rem;
+    margin: 0 0 6px 0;
+}
+.card h4{
+    margin: 0 0 14px 0;
+    color: var(--color-text-muted);
+    font-weight: 500;
+}
+
+.card p{
+    margin: 8px 0;
+    color: var(--color-text-secondary);
+    padding-left: 30px;
+    position: relative;
+}
+
+.card p::before{
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-surface-alt);
+    color: var(--color-primary);
+    font-size: 12px;
+}
+
+.card-container .card:nth-child(2) p::before{
+    color: var(--color-secondary);
+}
+.card-container .card:nth-child(3) p::before{
+    color: var(--color-accent);
+}
