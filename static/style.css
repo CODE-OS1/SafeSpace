@@ -388,3 +388,86 @@ nav ul a:hover{
 .card-container .card:nth-child(3) p::before{
     color: var(--color-accent);
 }
+
+/* Essence Of Safespace UG, starting question -- Why safespace UG */
+.essence{
+    margin-top: 100px;
+    background-color: var(--color-surface);
+    padding: 90px 0;
+}
+
+.essence-head h2{
+    font-size: var(--text-3xl);
+    text-align: center;
+    color: var(--color-text-primary);
+    font-family: var(--font-heading);
+    margin-bottom: 10px;
+}
+
+.essence-head p{
+    font-size: var(--text-lg);
+    text-align: center;
+    color: var(--color-text-muted);
+    font-family: var(--font-heading);
+    margin-bottom: 60px;
+}
+
+/* Responsive card layout without @media: two-column grid keeps cards compact on smaller screens and wider on larger screens */
+.essence-card-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(240px, 1fr)); /* two columns of flexible cards */
+    gap: 32px;
+    align-items: start;
+    width: min(100%, 1100px); /* let cards grow on larger screens while capping overall width */
+    margin: 0 auto; /* center the grid */
+}
+
+.essence-card{
+    background-color: #c6dbf82d;
+    border: 1px solid rgba(107, 114, 128, 0.18);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    box-shadow: var(--shadow-sm);
+    min-height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.essence-card-icon{
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 20px;
+}
+.icon1{
+    background-color: #c3dbfd6c;
+}
+
+.icon2{
+    background-color: #a8f8aa54;
+}
+.icon3{
+    background-color: #96dada59;
+}
+.icon4{
+    background-color: #f3b46244;
+}
+.essence-card:hover{
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.essence-card h3{
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    color: var(--color-text-primary);
+    font-family: var(--font-heading);
+}
+
+.essence-card p{
+    color: var(--color-text-muted);
+    line-height: 1.8;
+    font-family: var(--font-heading);
+}
