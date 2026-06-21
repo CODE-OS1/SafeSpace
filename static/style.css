@@ -389,14 +389,14 @@ nav ul a:hover{
     color: var(--color-accent);
 }
 
-/* Essence Of Safespace UG, starting question -- Why safespace UG */
-.essence{
+/* Essence Of Safespace UG, starting question -- Why safespace UG. Also the Value of safespace UG starting with WHat You Get */
+.essence, .value{
     margin-top: 100px;
     background-color: var(--color-surface);
     padding: 90px 0;
 }
 
-.essence-head h2{
+.essence-head h2, .value-head h2{
     font-size: clamp(1.9rem, 2.2vw, 2.5rem);
     text-align: center;
     color: var(--color-text-primary);
@@ -404,7 +404,7 @@ nav ul a:hover{
     margin-bottom: 10px;
 }
 
-.essence-head p{
+.essence-head p, .value-head p{
     font-size: var(--text-lg);
     text-align: center;
     color: var(--color-text-muted);
@@ -416,7 +416,7 @@ nav ul a:hover{
 }
 
 /* Responsive card layout without @media: two-column grid keeps cards compact on smaller screens and wider on larger screens */
-.essence-card-container{
+.essence-card-container, .value-card-container{
     display: grid;
     grid-template-columns: repeat(2, minmax(240px, 1fr)); /* two columns of flexible cards */
     gap: 32px;
@@ -426,23 +426,43 @@ nav ul a:hover{
 }
 
 .essence-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.essence-card , .value-card{
     background-color: #c6dbf82d;
-    border: 1px solid rgba(107, 114, 128, 0.18);
+    border: 1px solid rgba(107, 114, 128, 0.055);
     border-radius: var(--radius-lg);
     padding: 32px;
     box-shadow: var(--shadow-sm);
     min-height: 270px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     transition: transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
+.value-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 25px !important;
+    min-height: 20px !important;
+    flex-direction: row;
+}
+
+.value-card-text{
+    flex: 1;
+    min-width: 0;
+}
+
 .essence-card-icon{
+    margin-bottom: 20px;
+}
+.essence-card-icon, .value-card-icon{
     width: 48px;
     height: 48px;
     border-radius: var(--radius-lg);
-    margin-bottom: 20px;
+    flex-shrink: 0;
 }
 .icon1{
     background-color: #c3dbfd6c;
