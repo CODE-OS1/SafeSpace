@@ -607,6 +607,8 @@ nav ul a:hover{
     font-size: var(--text-sm);
 }
 
+/* Section Involving The rest Before the footer. The card-like part that has a blue colored and deeply designed  */
+
 /* Mobile fallback: stack assurance cards full width and hide timeline line/circles */
 @media (max-width: 768px) {
     .assurance-timeline{
