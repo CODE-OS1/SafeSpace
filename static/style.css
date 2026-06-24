@@ -607,8 +607,67 @@ nav ul a:hover{
     font-size: var(--text-sm);
 }
 
-/* Section Involving The rest Before the footer. The card-like part that has a blue colored and deeply designed  */
+/* Bottom Banner  */
+.bottom-banner-container{
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 990px;
+}
+.bottom-banner{
+    margin: 50px auto;
+    padding: 50px;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-xl);
+}
+.bottom-banner-icon{
+    width: 50px;
+    height: 50px;
+    background-color: #94A3B8;
+    margin: 20px auto;
+    border-radius: var(--radius-md);
+    padding: 35px;
+}
+.bottom-banner h3{
+    font-family: var(--font-heading);
+    color: var(--color-accent);
+    font-size: var(--text-base);
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
 
+.bottom-banner h2{
+    font-size: 2.7rem;
+    font-family: var(--font-heading);
+    text-align: center;
+    color: var(--color-surface);
+    margin-bottom: 20px;
+}
+
+.bottom-banner-text p{
+    text-align: center;
+    color: var(--color-border);
+    font-size: var(--text-lg);
+    line-height: 1.7;
+}
+
+.bottom-banner-button{
+    background-color: var(--color-surface);
+    width: fit-content;
+    padding: 15px 40px;
+    font-size: var(--text-lg);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-primary);
+    border: 0;
+    border-radius:  var(--radius-md);
+    margin: 30px auto 10px auto;
+    cursor: pointer;
+}
+
+.bottom-banner-button:hover{
+    background-color:#e2edfd;
+}
 /* Mobile fallback: stack assurance cards full width and hide timeline line/circles */
 @media (max-width: 768px) {
     .assurance-timeline{
